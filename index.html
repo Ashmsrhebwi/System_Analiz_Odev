@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Bookstore</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📚 Online Bookstore</h1>
+        <div class="filters">
+            <input type="text" id="search" placeholder="Search for a book..." onkeyup="filterBooks()">
+            <select id="category" onchange="filterBooks()">
+                <option value="all">All Categories</option>
+                <option value="programming">Programming</option>
+                <option value="design">Design</option>
+                <option value="marketing">Marketing</option>
+                <option value="ui ux">UI/UX</option>
+                <option value="seo">SEO</option>
+                <option value="mathematics">Mathematics</option>
+            </select>
+        </div>
+        <div id="books"></div>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
